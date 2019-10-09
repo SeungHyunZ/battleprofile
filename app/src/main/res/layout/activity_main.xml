@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/darkgray"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="70"
+            android:padding="2dp"
+            android:text=""
+            android:background="@android:color/darker_gray"
+            android:hint="전적입력" />
+
+        <EditText
+            android:id="@+id/search_text2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="70"
+            android:padding="2dp"
+            android:background="@android:color/darker_gray"
+            android:text=""
+            android:hint="전적입력" />
+
+        <EditText
+            android:id="@+id/search_text3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="70"
+            android:padding="2dp"
+            android:background="@android:color/darker_gray"
+            android:text=""
+            android:hint="전적입력" />
+
+        <EditText
+            android:id="@+id/search_text4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="70"
+            android:padding="2dp"
+            android:background="@android:color/darker_gray"
+            android:text=""
+            android:hint="전적입력" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:text="검색" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@color/darkgray"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/webview1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45">
+
+        </WebView>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgray"></LinearLayout>
+
+        <WebView
+            android:id="@+id/webview2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45">
+        </WebView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkgray"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@color/darkgray"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/webview3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45">
+
+        </WebView>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgray"></LinearLayout>
+
+        <WebView
+            android:id="@+id/webview4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45">
+        </WebView>
+    </LinearLayout>
+
+</LinearLayout>
